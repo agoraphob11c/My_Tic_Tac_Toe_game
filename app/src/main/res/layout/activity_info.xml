@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E8D1"
+    tools:context=".info">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="UNUSUAL"
+        android:textColor="#FD66716A"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="TIC-TAC-TOE"
+        android:textColor="#8FA395"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/headerthird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Info about the game:"
+        android:textColor="#FD66716A"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="365dp"
+        android:layout_height="393dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerthird"
+        tools:ignore="MissingConstraints">
+
+        <!-- This rules wrote chatGPT, because i don't like to write a lot -->
+        <!-- I sent him my code and he wrote me this -->
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_tamma_2"
+            android:text="• The objective of the game is to get three of your symbols (either X or O) in a row, column, or diagonal on the game board.\n
+• Players take turns placing their symbols (X or O) on the game board.\n
+• If a player gets three of their symbols in a row, column, or diagonal, they win the game.\n
+• If there are no empty spots left on the board and no player has won, the game ends in a draw.\n
+• Players have additional actions they can perform besides placing their symbol:\n
+     • Simple Add: Add your symbol to an empty spot on the board.\n
+     • Delete Item: Remove a symbol from any spot on the board.\n
+     • Change Item: Change any symbol on the board to the opposite symbol.\n
+     • Undeletable Item: Make any symbol on the board undeletable.\n"
+            android:textColor="#FD66716A"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonBack"
+
+        android:layout_width="111dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="BACK"
+        android:textColor="#E7E8D1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

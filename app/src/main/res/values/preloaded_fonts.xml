@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/baloo_tamma</item> <!--Chat showed where I can write my fonts which I used in project-->
+        <item>@font/baloo_tamma_2</item>
+    </array>
+</resources>

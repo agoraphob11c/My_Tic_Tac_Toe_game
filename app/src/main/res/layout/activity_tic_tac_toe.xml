@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E8D1"
+    tools:context=".TicTacToe">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="263dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="UNUSUAL"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="141dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="TIC-"
+        android:textColor="#FD66716A"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="89dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="TAC-"
+        android:textColor="#8FA395"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="213dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="TOE"
+        android:textColor="#A7BEAE"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartGame1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/buttonStartGame1"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="START"
+        android:textColor="#E7E8D1"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="INFO"
+        android:textAlignment="center"
+        android:textColor="#E7E8D1"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

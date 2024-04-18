@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E8D1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="UNUSUAL"
+        android:textColor="#FD66716A"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="TIC-TAC-TOE"
+        android:textColor="#8FA395"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Let's start the game"
+        android:textColor="#FD66716A"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/randomFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="616dp"
+        android:fontFamily="@font/baloo_tamma_2"
+        android:text="Random: "
+        android:visibility="invisible"
+        android:textColor="#FD66716A"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/erText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="616dp"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="You can't put it here! "
+        android:textColor="#FD66716A"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Part whith GridLayout and first button I took from video on youtube because I didn't where to start with my project -->
+    <!-- I watched first 13 mins and than started do on my own-->
+    <!--https://www.youtube.com/watch?v=Qc7jyq1AFHU&t=749s here is the video-->
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="352dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="29dp"
+
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="165dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moveName"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <Button
+
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background"
+            android:enabled="false"
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1"
+            android:id="@+id/button2"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:id="@+id/button3"
+            android:textColor="#E7E8D1"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1"
+            android:id="@+id/button4"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1"
+            android:id="@+id/button5"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1"
+            android:id="@+id/button6"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1"
+            android:id="@+id/button7"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:id="@+id/button8"
+            android:textColor="#E7E8D1"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+        <Button
+            android:fontFamily="@font/baloo_tamma"
+            android:textSize="70sp"
+            android:textColor="#E7E8D1"
+            android:id="@+id/button9"
+            android:enabled="false"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_button_background" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonStartGame"
+
+        android:fontFamily="@font/baloo_tamma_2"
+        android:textSize="20sp"
+        android:textColor="#E7E8D1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="START GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/buttonReplayGame"
+
+        android:fontFamily="@font/baloo_tamma_2"
+        android:textColor="#E7E8D1"
+        android:textSize="20sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/rounded_button_background"
+        android:text="PLAY AGAIN"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/buttonBack"
+
+        android:layout_width="111dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/baloo_tamma"
+        android:text="BACK"
+        android:textColor="#E7E8D1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
